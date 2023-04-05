@@ -102,7 +102,7 @@ img[alt~="botao"] {
     width: 2em;
 }
 
-.img__secundaria {
+.img__1 {
     grid-area: secundaria;
     display: grid;
     grid-template-areas:
@@ -112,28 +112,28 @@ img[alt~="botao"] {
     row-gap: 10px;
 }
 
-.img1 {
+.img1{
     background-image: url(./imgs/4);
     background-size: cover;
     grid-area: img1;
 
 }
 
-.img2 {
-    background-image: url(./img/california.png);
+.img2{
+    background-image: url(./imgs/5);
     background-size: cover;
     grid-area: img2;
 
 }
 
-.img3 {
-    background-image: url(./img/mundo_invertido_nancy.jpeg);
+.img3{
+    background-image: url(./imgs/6);
     background-size: cover;
     grid-area: img3;
 }
 
-.img4 {
-    background-image: url(./img/eddy.png);
+.img4{
+    background-image: url(./imgs/7);
     background-size: cover;
     grid-area: img4;
 }
@@ -145,17 +145,17 @@ img[alt~="botao"] {
 }
 
 .img5 {
-    background-image: url(./img/vecna.png);
+    background-image: url(./imgs/1);
     background-size: cover;
 }
 
 .img6 {
-    background-image: url(./img/max__cemiterio.webp);
+    background-image: url(./imgs/2);
     background-size: cover;
 }
 
 .img7 {
-    background-image: url(./img/reuniao.jpg);
+    background-image: url(./imgs/3);
     background-size: cover;
 }
 
