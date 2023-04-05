@@ -40,7 +40,7 @@ main {
     row-gap: 10px;
 }
 
-.faixa_principal {
+.faixa__principal {
     display: grid;
     grid-template-areas:
         "principal secundaria"
@@ -49,7 +49,7 @@ main {
     grid-template-columns: 7fr 6fr;
 }
 
-.img_principal {
+.img__principal {
     grid-area: principal;
     background-image: url(./imgs/enhypen_manifesto_day_1_teaser_concept_J_all_group_1.jpg);
     background-size: cover;
@@ -57,7 +57,7 @@ main {
     place-items: end start;
 }
 
-.faixa_informacoes {
+.faixa__informacoes {
     height: 2.3em;
     width: 100%;
     display: grid;
@@ -66,7 +66,7 @@ main {
     transition-duration: .3s;
 }
 
-.faixa_informacoes:hover {
+.faixa__informacoes:hover {
     opacity: 1;
 }
 
@@ -113,49 +113,49 @@ img[alt~="botao"] {
 }
 
 .img1 {
-    background-image: url(./imgs/);
+    background-image: url(./imgs/4);
     background-size: cover;
     grid-area: img1;
 
 }
 
 .img2 {
-    background-image: url(./imgs/);
+    background-image: url(./img/california.png);
     background-size: cover;
     grid-area: img2;
 
 }
 
 .img3 {
-    background-image: url(./imgs/);
+    background-image: url(./img/mundo_invertido_nancy.jpeg);
     background-size: cover;
     grid-area: img3;
 }
 
 .img4 {
-    background-image: url(./imgs/);
+    background-image: url(./img/eddy.png);
     background-size: cover;
     grid-area: img4;
 }
 
-.faixa__1 {
+.faixa__secundaria {
     display: grid;
     column-gap: 10px;
     grid-template-columns: 2fr 2fr 3fr;
 }
 
 .img5 {
-    background-image: url(./imgs/);
+    background-image: url(./img/vecna.png);
     background-size: cover;
 }
 
 .img6 {
-    background-image: url(./imgs/);
+    background-image: url(./img/max__cemiterio.webp);
     background-size: cover;
 }
 
 .img7 {
-    background-image: url(./imgs/);
+    background-image: url(./img/reuniao.jpg);
     background-size: cover;
 }
 
