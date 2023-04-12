@@ -113,27 +113,27 @@ img[alt~="botao"] {
 }
 
 .img1{
-    background-image: url(./imgs/4);
+    background-image: url(imgs/4.png);
     background-size: cover;
     grid-area: img1;
 
 }
 
 .img2{
-    background-image: url(./imgs/5);
+    background-image: url(imgs/5.png);
     background-size: cover;
     grid-area: img2;
 
 }
 
 .img3{
-    background-image: url(./imgs/6);
+    background-image: url(imgs/6.png);
     background-size: cover;
     grid-area: img3;
 }
 
 .img4{
-    background-image: url(./imgs/7);
+    background-image: url(imgs/7.png);
     background-size: cover;
     grid-area: img4;
 }
@@ -145,17 +145,18 @@ img[alt~="botao"] {
 }
 
 .img5 {
-    background-image: url(./imgs/1);
+    background-image: url(imgs/1.png);
     background-size: cover;
+    grid-area: img5;
 }
 
 .img6 {
-    background-image: url(./imgs/2);
+    background-image: url(imgs/2.png);
     background-size: cover;
 }
 
 .img7 {
-    background-image: url(./imgs/3);
+    background-image: url(imgs/3.png);
     background-size: cover;
 }
 
