@@ -2,24 +2,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border-radius: 5px;
-}
-
-body {
-    display: grid;
-    height: 100vh;
-    grid-template-rows: 125px 1fr 125px;
-    margin: 0px 325px 0px 325px;
     font-family: 'Libre Baskerville', serif;
     font-family: 'Lora', serif;
-    background-color: #f1f1f1;
-    /* background-image: url(./img/fundo6.jpg);
-    background-size: cover;
-    background-repeat: no-repeat; */
 }
 
-header {
-    display: grid;
+a {
+    text-decoration: none;
+}
+
+ul, ol, li {
+    list-style: none;
 }
 
 h1 {
@@ -30,134 +22,92 @@ h1 {
     font-size: 1.7em;
 }
 
-p+p {
-    color: maroon;
-}
-
-main {
+body {
+    background-color: #D6D2E5;
+    height: 100vh;
+    width: 100vw;
     display: grid;
-    grid-template-rows: 4fr 2fr;
-    row-gap: 10px;
+    grid-template-rows: 100px 1fr 100px;
+    padding-left: 96px;
+    padding-right: 96px;
 }
 
-.faixa__principal {
-    display: grid;
-    grid-template-areas:
-        "principal secundaria"
-        "principal secundaria";
-    gap: 10px;
-    grid-template-columns: 7fr 6fr;
-}
-
-.img__principal {
-    grid-area: principal;
-    background-image: url(./imgs/enhypen_manifesto_day_1_teaser_concept_J_all_group_1.jpg);
-    background-size: cover;
-    display: grid;
-    place-items: end start;
-}
-
-.faixa__informacoes {
-    height: 2.3em;
+.galeria {
+    height: 100%;
     width: 100%;
     display: grid;
-    grid-template-columns: 8fr 1fr;
-    opacity: 0;
-    transition-duration: .3s;
-}
-
-.faixa__informacoes:hover {
-    opacity: 1;
-}
-
-.informacoes {
-    background-color: rgb(16, 35, 51, 0.8);
-    display: grid;
-    justify-content: center;
-    align-items: center;
-}
-
-.informacoes p {
-    color: white;
-    opacity: 1;
-    font-size: 0.9em;
-    opacity: 1;
-}
-
-.comprar {
-    background-color: maroon;
-    display: grid;
-    place-items: center;
-    align-items: center;
-}
-
-.comprar a {
-    display: grid;
-    place-items: center;
-    align-items: center;
-}
-
-img[alt~="botao"] {
-    height: 2em;
-    width: 2em;
-}
-
-.img__1 {
-    grid-area: secundaria;
-    display: grid;
     grid-template-areas:
-        "img1 img2"
-        "img3 img4";
-    column-gap: 10px;
-    row-gap: 10px;
+       "f1 f1 f1 f1 f1 f2 f2 f2 f3 f3 f3"
+       "f1 f1 f1 f1 f1 f4 f4 f4 f5 f5 f5"
+       "f6 f6 f6 f7 f7 f7 f8 f8 f8 f8 f8";
+    gap: 12px;
 }
 
-.img1{
-    background-image: url(imgs/4.png);
+.foto {
+    position: relative;
+    background-color: #81718f9c;
+    background-repeat: no-repeat;
     background-size: cover;
-    grid-area: img1;
+    background-position: center;
+    overflow: hidden;
+    border:4px solid #999;
+    border-radius: 10px;
+}
+
+.foto:nth-child(1){
+    grid-area: f1;
+    background-image: url(./imgs/enhypen_manifesto_day_1_teaser_concept_J_all_group_1.jpg);
 
 }
 
-.img2{
-    background-image: url(imgs/5.png);
-    background-size: cover;
-    grid-area: img2;
-
+.foto:nth-child(2){
+    grid-area: f2;
+    background-image: url(./imgs/2.png);
 }
 
-.img3{
-    background-image: url(imgs/6.png);
-    background-size: cover;
-    grid-area: img3;
+.foto:nth-child(3){
+    grid-area: f3;
+    background-image: url(./imgs/5.png);
 }
 
-.img4{
-    background-image: url(imgs/7.png);
-    background-size: cover;
-    grid-area: img4;
+.foto:nth-child(4){
+    grid-area: f4;
+    background-image: url(./imgs/6_cropped.png);
 }
 
-.faixa__secundaria {
-    display: grid;
-    column-gap: 10px;
-    grid-template-columns: 2fr 2fr 3fr;
+.foto:nth-child(5){
+    grid-area: f5;
+    background-image: url(./imgs/2.png);
 }
 
-.img5 {
-    background-image: url(imgs/1.png);
-    background-size: cover;
-    grid-area: img5;
+.foto:nth-child(6){
+    grid-area: f6;
+    background-image: url(./imgs/111111111.jfif);
 }
 
-.img6 {
-    background-image: url(imgs/2.png);
-    background-size: cover;
+.foto:nth-child(7){
+    grid-area: f7;
+    background-image: url(./imgs/1_cropped.png);
 }
 
-.img7 {
-    background-image: url(imgs/3.png);
-    background-size: cover;
+.foto:nth-child(8){
+    grid-area: f8;
+    background-image: url(./imgs/7_cropped.png);
+}
+
+.foto:hover > .foto__info {
+    transform: translateY(0%);
+}
+
+.foto__info {
+    position: absolute;
+    width: 100%;
+    height: 64px;
+    background-color: rgba(119, 136, 153, 0.623);
+    color: white;
+    bottom: 0;
+    transform: translateY(100%);
+    transition: 1s;
 }
 
 footer {
@@ -166,7 +116,7 @@ footer {
     align-items: center;
 }
 
-.buy__here {
+.video__playlist {
     border-radius: 50px;
     background-color: #102333;
     align-items: center;
@@ -177,14 +127,32 @@ footer {
     justify-content: center;
 }
 
-.buy__here:hover {
+.video__playlist:hover {
     background-color: #163652;
     border-style: solid;
     border-color: #102333;
     transform: scale(1.1);
 }
 
-.buy__here * {
+.video__playlist * {
     text-decoration: none;
     color: white;
+}
+
+
+@media (max-width: 768px){
+    body {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .galeria {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .foto{
+        width: 100%;
+        height: 33vh;
+    }
 }
